@@ -1,0 +1,14 @@
+/* General Styles */
+@import url('css/styles.css'); /* Standaard styles */
+
+/* Component Styles */
+@import url('css/components/footer.css');
+@import url('css/components/navbar.css');
+
+/* Page Specific Styles */
+@import url('css/pages/afspraak.css');
+@import url('css/pages/contact.css');
+@import url('css/pages/home.css');
+@import url('css/pages/nagels.css');
+@import url('css/pages/over-ons.css');
+@import url('css/pages/prijsoverzicht.css');
