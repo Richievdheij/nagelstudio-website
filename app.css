@@ -1,0 +1,10 @@
+/* General Styles */
+@import url('./assets/css/styles.css'); /* Standaard styles */
+
+/* Page Specific Styles */
+@import url('./assets/css/pages/afspraak.css');
+@import url('./assets/css/pages/contact.css');
+@import url('./assets/css/pages/home.css');
+@import url('./assets/css/pages/nagels.css');
+@import url('./assets/css/pages/over-ons.css');
+@import url('./assets/css/pages/prijsoverzicht.css');
