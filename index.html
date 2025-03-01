@@ -1,194 +1,182 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nagels - Professionele Nagel & Schoonheidssalon</title>
-  <link rel="stylesheet" href="./app.css">
-  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - LOGO</title>
+    <link rel="stylesheet" href="./app.css">
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 </head>
 <body>
-  <!-- Top Info Bar -->
-  <div class="topbar">
-    <div class="topbar__container">
-      <div class="topbar__contact">
-        <span class="topbar__item"><span class="iconify" data-icon="mdi:phone"></span> +31 6 12345678</span>
-        <span class="topbar__item"><span class="iconify" data-icon="mdi:email"></span> info@email.nl</span>
-      </div>
-      <div class="topbar__hours">
-        <span class="topbar__item"><span class="iconify" data-icon="mdi:clock-outline"></span> Ma-Vr: 9:00-18:00, Za-Zo: 10:00-16:00</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Main Navigation -->
-  <nav class="navbar">
-    <div class="navbar__container">
-      <div class="navbar__logo">
-        <a href="index.html">
-          <h1>Bedrijfsnaam</h1>
-        </a>
-      </div>
-      
-      <div class="navbar__menu-toggle">
-        <span class="navbar__hamburger"></span>
-      </div>
-      
-      <ul class="navbar__menu">
-        <li class="navbar__item navbar__item--active"><a href="index.html" class="navbar__link">Home</a></li>
-        <li class="navbar__item"><a href="nagels.html" class="navbar__link">Nagels</a></li>
-        <li class="navbar__item"><a href="prijsoverzicht.html" class="navbar__link">Prijsoverzicht</a></li>
-        <li class="navbar__item"><a href="over-ons.html" class="navbar__link">Over Ons</a></li>
-        <li class="navbar__item"><a href="contact.html" class="navbar__link">Contact</a></li>
-      </ul>
-      
-      <div class="navbar__appointment">
-        <a href="https://wa.me/31612345678" class="btn btn--primary">Afspraak Maken</a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero__container">
-      <div class="hero__content">
-        <h1 class="hero__title">Welkom bij Bedrijfsnaam</h1>
-        <p class="hero__subtitle">Lorem ipsum dolor sit amet.</p>
-        <p class="hero__description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.
-        </p>
-        <a href="contact.html" class="btn btn--secondary">Ontdek Meer</a>
-      </div>
-      <div class="hero__image">
-        <!-- Placeholder for image -->
-        <div class="hero__image-placeholder">
-          <span>Hier komt een afbeelding</span>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-contact">
+                <a href="tel:+31612345678"><span class="iconify" data-icon="mdi:phone"></span> +31 6 12345678</a>
+                <a href="mailto:info@nailsbeauty.nl"><span class="iconify" data-icon="mdi:email"></span> info@nailsbeauty.nl</a>
+            </div>
+            <div class="top-bar-hours">
+                <span><span class="iconify" data-icon="mdi:clock-outline"></span> Ma-Vr: 9:00-18:00 | Za: 10:00-16:00</span>
+            </div>
         </div>
-      </div>
     </div>
-  </header>
 
-  <!-- Services Section -->
-  <section class="services">
-    <div class="services__container">
-      <h2 class="section-title">Onze Diensten</h2>
-      <div class="services__grid">
-        <div class="services__item">
-          <div class="services__icon">
-            <span class="iconify" data-icon="mdi:nail"></span>
-          </div>
-          <h3 class="services__title">Gelnagels</h3>
-          <p class="services__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.
-          </p>
+    <!-- Main Navigation -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <div class="logo">
+                    <a href="index.html">LOGO</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="nagels.html">Nagels</a></li>
+                    <li><a href="prijsoverzicht.html">Prijsoverzicht</a></li>
+                    <li><a href="over-ons.html">Over Ons</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="afspraak.html" class="appointment-btn">
+                    <span class="iconify" data-icon="mdi:calendar-check"></span> Afspraak Maken
+                </a>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
         </div>
-        <div class="services__item">
-          <div class="services__icon">
-            <span class="iconify" data-icon="mdi:hand-wash"></span>
-          </div>
-          <h3 class="services__title">Manicure</h3>
-          <p class="services__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.
-          </p>
-        </div>
-        <div class="services__item">
-          <div class="services__icon">
-            <span class="iconify" data-icon="mdi:palette"></span>
-          </div>
-          <h3 class="services__title">Nail Art</h3>
-          <p class="services__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- About Section Preview -->
-  <section class="about-preview">
-    <div class="about-preview__container">
-      <div class="about-preview__image">
-        <!-- Placeholder for image -->
-        <div class="about-preview__image-placeholder">
-          <span>Hier komt een afbeelding</span>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Welkom bij LOGO</h1>
+                    <p class="hero-subtitle">Voor stralende nagels en schoonheid</p>
+                    <p class="hero-description">
+                        Bij LOGO zorgen wij ervoor dat u zich op uw best voelt. 
+                        Onze professionele nagelstylisten en schoonheidsspecialisten staan 
+                        klaar om u de beste verzorging te bieden in een ontspannen omgeving.
+                    </p>
+                    <a href="afspraak.html" class="btn">Maak een Afspraak</a>
+                </div>
+                <div class="hero-image">
+                    <!-- Placeholder for image -->
+                    <div style="background-color: #ddd; height: 400px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                        <span class="iconify" data-icon="mdi:image" style="font-size: 5rem; color: #999;"></span>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="about-preview__content">
-        <h2 class="section-title">Over Bedrijfsnaam</h2>
-        <p class="about-preview__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.
-        </p>
-        <p class="about-preview__text">
-          Suspendisse in orci enim. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.
-        </p>
-        <a href="over-ons.html" class="btn btn--secondary">Lees Meer</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer__container">
-      <div class="footer__column">
-        <div class="footer__logo">
-          <h2>Bedrijfsnaam</h2>
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Onze <span class="fancy-title">Specialiteiten</span></h2>
+            <div class="features-container">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span class="iconify" data-icon="mdi:nail"></span>
+                    </div>
+                    <h3 class="feature-title">Nagelstudio</h3>
+                    <p class="feature-description">
+                        Professionele nagelbehandelingen met de nieuwste technieken en hoogwaardige producten voor prachtige, duurzame resultaten.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span class="iconify" data-icon="mdi:face-woman"></span>
+                    </div>
+                    <h3 class="feature-title">Gezichtsbehandelingen</h3>
+                    <p class="feature-description">
+                        Ontspannende en effectieve gezichtsbehandelingen die uw huid laten stralen en verjongen.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span class="iconify" data-icon="mdi:hand-heart"></span>
+                    </div>
+                    <h3 class="feature-title">Persoonlijke Aandacht</h3>
+                    <p class="feature-description">
+                        Bij ons staat u centraal. We luisteren naar uw wensen en bieden behandelingen die perfect bij u passen.
+                    </p>
+                </div>
+            </div>
         </div>
-        <p class="footer__description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.
-        </p>
-      </div>
-      
-      <div class="footer__column">
-        <h3 class="footer__title">Contact</h3>
-        <ul class="footer__contact-list">
-          <li class="footer__contact-item">
-            <span class="iconify" data-icon="mdi:map-marker"></span> Hoofdstraat 123, 1234 AB Amsterdam
-          </li>
-          <li class="footer__contact-item">
-            <span class="iconify" data-icon="mdi:phone"></span> +31 6 12345678
-          </li>
-          <li class="footer__contact-item">
-            <span class="iconify" data-icon="mdi:email"></span> info@Bedrijfsnaam.nl
-          </li>
-        </ul>
-      </div>
-      
-      <div class="footer__column">
-        <h3 class="footer__title">Openingstijden</h3>
-        <ul class="footer__hours-list">
-          <li class="footer__hours-item">Maandag: 9:00 - 18:00</li>
-          <li class="footer__hours-item">Dinsdag: 9:00 - 18:00</li>
-          <li class="footer__hours-item">Woensdag: 9:00 - 18:00</li>
-          <li class="footer__hours-item">Donderdag: 9:00 - 18:00</li>
-          <li class="footer__hours-item">Vrijdag: 9:00 - 18:00</li>
-          <li class="footer__hours-item">Zaterdag: 10:00 - 16:00</li>
-          <li class="footer__hours-item">Zondag: Gesloten</li>
-        </ul>
-      </div>
-      
-      <div class="footer__column">
-        <h3 class="footer__title">Pagina's</h3>
-        <ul class="footer__nav-list">
-          <li class="footer__nav-item"><a href="index.html" class="footer__nav-link">Home</a></li>
-          <li class="footer__nav-item"><a href="nagels.html" class="footer__nav-link">Nagels</a></li>
-          <li class="footer__nav-item"><a href="prijsoverzicht.html" class="footer__nav-link">Prijsoverzicht</a></li>
-          <li class="footer__nav-item"><a href="over-ons.html" class="footer__nav-link">Over Ons</a></li>
-          <li class="footer__nav-item"><a href="contact.html" class="footer__nav-link">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-    
-    <div class="footer__bottom">
-      <div class="footer__social">
-        <a href="#" class="footer__social-link"><span class="iconify" data-icon="mdi:facebook"></span></a>
-        <a href="#" class="footer__social-link"><span class="iconify" data-icon="mdi:instagram"></span></a>
-      </div>
-      <div class="footer__copyright">
-        <p>&copy; 2025 Bedrijfsnaam. Alle rechten voorbehouden.</p>
-      </div>
-    </div>
-  </footer>
+    </section>
 
-  <script src="js/main.js"></script>
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-image">
+                    <!-- Placeholder for image -->
+                    <div style="background-color: #ddd; height: 400px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                        <span class="iconify" data-icon="mdi:image" style="font-size: 5rem; color: #999;"></span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h2 class="about-title">Over LOGO</h2>
+                    <p class="about-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.
+                    </p>
+                    <p class="about-description">
+                        Suspendisse in orci enim. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.
+                    </p>
+                    <a href="over-ons.html" class="btn">Lees Meer</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <a href="index.html">LOGO</a>
+                    </div>
+                    <div class="footer-contact">
+                        <p><span class="iconify" data-icon="mdi:map-marker"></span> Hoofdstraat 123, 1234 AB Amsterdam</p>
+                        <p><span class="iconify" data-icon="mdi:phone"></span> +31 6 12345678</p>
+                        <p><span class="iconify" data-icon="mdi:email"></span> info@nailsbeauty.nl</p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><span class="iconify" data-icon="mdi:facebook"></span></a>
+                        <a href="#" aria-label="Instagram"><span class="iconify" data-icon="mdi:instagram"></span></a>
+                    </div>
+                </div>
+                <div class="footer-hours">
+                    <h3>Openingstijden</h3>
+                    <p>Maandag: 9:00 - 18:00</p>
+                    <p>Dinsdag: 9:00 - 18:00</p>
+                    <p>Woensdag: 9:00 - 18:00</p>
+                    <p>Donderdag: 9:00 - 18:00</p>
+                    <p>Vrijdag: 9:00 - 18:00</p>
+                    <p>Zaterdag: 10:00 - 16:00</p>
+                    <p>Zondag: Gesloten</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Snelle Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="nagels.html">Nagels</a></li>
+                        <li><a href="prijsoverzicht.html">Prijsoverzicht</a></li>
+                        <li><a href="over-ons.html">Over Ons</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="afspraak.html">Afspraak Maken</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LOGO. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>

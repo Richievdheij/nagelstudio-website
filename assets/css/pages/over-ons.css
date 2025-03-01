@@ -1,0 +1,164 @@
+/* Over Ons Page Styles */
+
+.over-ons-hero {
+    background-color: var(--primary);
+    padding: 6rem 0 4rem;
+    text-align: center;
+  }
+  
+  .over-ons-title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--secondary);
+  }
+  
+  .over-ons-subtitle {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--secondary);
+  }
+  
+  .story-section {
+    padding: 5rem 0;
+  }
+  
+  .story-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  .story-image {
+    flex: 1;
+  }
+  
+  .story-image img {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .story-content {
+    flex: 1;
+  }
+  
+  .story-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--secondary);
+  }
+  
+  .story-text {
+    margin-bottom: 1.5rem;
+  }
+  
+  .team-section {
+    background-color: var(--accent);
+    padding: 5rem 0;
+  }
+  
+  .team-title {
+    color: var(--light);
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  
+  .team-member {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+  }
+  
+  .team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .member-image {
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .member-info {
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .member-name {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--secondary);
+  }
+  
+  .member-role {
+    font-style: italic;
+    margin-bottom: 1rem;
+    color: #666;
+  }
+  
+  .member-bio {
+    margin-bottom: 1rem;
+  }
+  
+  .values-section {
+    padding: 5rem 0;
+  }
+  
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  .value-card {
+    background-color: var(--primary);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .value-icon {
+    font-size: 3rem;
+    color: var(--secondary);
+    margin-bottom: 1.5rem;
+  }
+  
+  .value-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--secondary);
+  }
+  
+  .value-description {
+    color: var(--dark);
+  }
+  
+  @media (max-width: 992px) {
+    .team-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .story-container {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .team-grid,
+    .values-grid {
+      grid-template-columns: 1fr;
+    }
+  }

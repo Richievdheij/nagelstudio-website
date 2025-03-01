@@ -1,13 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - </title>
+    <title>Contact - LOGO</title>
     <link rel="stylesheet" href="./app.css">
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 </head>
 <body>
-    
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-contact">
+                <a href="tel:+31612345678"><span class="iconify" data-icon="mdi:phone"></span> +31 6 12345678</a>
+                <a href="mailto:info@nailsbeauty.nl"><span class="iconify" data-icon="mdi:email"></span> info@nailsbeauty.nl</a>
+            </div>
+            <div class="top-bar-hours">
+                <span><span class="iconify" data-icon="mdi:clock-outline"></span> Ma-Vr: 9:00-18:00 | Za: 10:00-16:00</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <div class="logo">
+                    <a href="index.html">LOGO</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="nagels.html">Nagels</a></li>
+                    <li><a href="prijsoverzicht.html">Prijsoverzicht</a></li>
+                    <li><a href="over-ons.html">Over Ons</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="afspraak.html" class="appointment-btn">
+                    <span class="iconify" data-icon="mdi:calendar-check"></span> Afspraak Maken
+                </a>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1 class="contact-title">Contact</h1>
+            <p class="contact-subtitle">Neem contact met ons op</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contactgegevens</h3>
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <span class="iconify" data-icon="mdi:map-marker"></span>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Adres</h4>
+                            <p>Hoofdstraat 123<br>1234 AB Amsterdam</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <span class="iconify" data-icon="mdi:phone"></span>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Telefoon</h4>
+                            <p><a href="tel:+31612345678">+31 6 12345678</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <span class="iconify" data-icon="mdi:email"></span>
+                        </div>
+                        <div class="contact-text">
+                            <h4>E-mail</h4>
+                            <p><a href="mailto:info@nailsbeauty.nl">info@nailsbeauty.nl</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <span class="iconify" data-icon="mdi:clock-outline"></span>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Openingstijden</h4>
+                            <p>Maandag - Vrijdag: 9:00 - 18:00<br>
+                            Zaterdag: 10:00 - 16:00<br>
+                            Zondag: Gesloten</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Stuur ons een bericht</h3>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="name">Naam</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefoon</label>
+                            <input type="tel" id="phone" name="phone" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Onderwerp</label>
+                            <input type="text" id="subject" name="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Bericht</label>
+                            <textarea id="message" name="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Versturen</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="map-container">
+                <!-- Placeholder for map - in a real project, you would replace this with an actual Google Maps embed -->
+                <div style="background-color: #ddd; height: 100%; display: flex; align-items: center; justify-content: center;">
+                    <span class="iconify" data-icon="mdi:map" style="font-size: 5rem; color: #999;"></span>
+                    <p style="margin-left: 20px; font-size: 1.2rem; color: #666;">Hier komt een Google Maps kaart</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <a href="index.html">LOGO</a>
+                    </div>
+                    <div class="footer-contact">
+                        <p><span class="iconify" data-icon="mdi:map-marker"></span> Hoofdstraat 123, 1234 AB Amsterdam</p>
+                        <p><span class="iconify" data-icon="mdi:phone"></span> +31 6 12345678</p>
+                        <p><span class="iconify" data-icon="mdi:email"></span> info@nailsbeauty.nl</p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><span class="iconify" data-icon="mdi:facebook"></span></a>
+                        <a href="#" aria-label="Instagram"><span class="iconify" data-icon="mdi:instagram"></span></a>
+                    </div>
+                </div>
+                <div class="footer-hours">
+                    <h3>Openingstijden</h3>
+                    <p>Maandag: 9:00 - 18:00</p>
+                    <p>Dinsdag: 9:00 - 18:00</p>
+                    <p>Woensdag: 9:00 - 18:00</p>
+                    <p>Donderdag: 9:00 - 18:00</p>
+                    <p>Vrijdag: 9:00 - 18:00</p>
+                    <p>Zaterdag: 10:00 - 16:00</p>
+                    <p>Zondag: Gesloten</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Snelle Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="nagels.html">Nagels</a></li>
+                        <li><a href="prijsoverzicht.html">Prijsoverzicht</a></li>
+                        <li><a href="over-ons.html">Over Ons</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="afspraak.html">Afspraak Maken</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LOGO. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>

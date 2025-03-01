@@ -1,0 +1,172 @@
+/* Afspraak Page Styles */
+
+.afspraak-hero {
+  background-color: var(--primary);
+  padding: 6rem 0 4rem;
+  text-align: center;
+}
+
+.afspraak-title {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: var(--secondary);
+}
+
+.afspraak-subtitle {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--secondary);
+}
+
+.booking-section {
+  padding: 5rem 0;
+}
+
+.booking-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.booking-info {
+  background-color: var(--accent);
+  padding: 3rem;
+  border-radius: 10px;
+  color: var(--light);
+}
+
+.booking-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.booking-steps {
+  margin-bottom: 2rem;
+}
+
+.booking-step {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.step-number {
+  background-color: var(--primary);
+  color: var(--secondary);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.step-text h4 {
+  margin-bottom: 0.5rem;
+}
+
+.booking-form {
+  background-color: white;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.booking-form h3 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: var(--secondary);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--secondary);
+}
+
+.service-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 1.5rem;
+}
+
+.service-option {
+  display: flex;
+  align-items: center;
+}
+
+.service-option input {
+  margin-right: 10px;
+}
+
+.whatsapp-section {
+  background-color: var(--primary);
+  padding: 4rem 0;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.whatsapp-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--secondary);
+}
+
+.whatsapp-description {
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: #25D366;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  transition: var(--transition);
+}
+
+.whatsapp-btn:hover {
+  background-color: #128C7E;
+}
+
+.whatsapp-icon {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 992px) {
+  .booking-container {
+    grid-template-columns: 1fr;
+  }
+
+  .service-options {
+    grid-template-columns: 1fr;
+  }
+}
