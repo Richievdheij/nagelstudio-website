@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prijsoverzicht - LOGO</title>
+    <title>Price Overview - Bella Nails & Beauty</title>
+    <meta name="description" content="View our price list for nail treatments and beauty care at Bella Nails & Beauty in Amsterdam.">
     <link rel="stylesheet" href="./app.css">
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 </head>
@@ -13,10 +14,23 @@
         <div class="container">
             <div class="top-bar-contact">
                 <a href="tel:+31612345678"><span class="iconify" data-icon="mdi:phone"></span> +31 6 12345678</a>
-                <a href="mailto:info@nailsbeauty.nl"><span class="iconify" data-icon="mdi:email"></span> info@nailsbeauty.nl</a>
+                <a href="mailto:info@bellanails.nl"><span class="iconify" data-icon="mdi:email"></span> info@bellanails.nl</a>
             </div>
             <div class="top-bar-hours">
-                <span><span class="iconify" data-icon="mdi:clock-outline"></span> Ma-Vr: 9:00-18:00 | Za: 10:00-16:00</span>
+                <span><span class="iconify" data-icon="mdi:clock-outline"></span> <span data-i18n="openingHours">Mon-Fri: 9:00-18:00 | Sat: 10:00-16:00</span></span>
+                <div class="language-selector">
+                    <div class="language-btn">
+                        <span class="iconify" data-icon="mdi:translate"></span>
+                    </div>
+                    <div class="language-dropdown">
+                        <div class="language-option active" data-lang="en">
+                            <span class="iconify" data-icon="emojione:flag-for-united-kingdom"></span> English
+                        </div>
+                        <div class="language-option" data-lang="es">
+                            <span class="iconify" data-icon="emojione:flag-for-spain"></span> Español
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -26,17 +40,17 @@
         <div class="container">
             <nav class="main-nav">
                 <div class="logo">
-                    <a href="index.html">LOGO</a>
+                    <a href="index.html">Bella Nails</a>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="nagels.html">Nagels</a></li>
-                    <li><a href="prijsoverzicht.html">Prijsoverzicht</a></li>
-                    <li><a href="over-ons.html">Over Ons</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html" data-i18n="home">Home</a></li>
+                    <li><a href="nagels.html" data-i18n="nails">Nails</a></li>
+                    <li><a href="prijsoverzicht.html" data-i18n="prices">Prices</a></li>
+                    <li><a href="over-ons.html" data-i18n="about">About Us</a></li>
+                    <li><a href="contact.html" data-i18n="contact">Contact</a></li>
                 </ul>
                 <a href="afspraak.html" class="appointment-btn">
-                    <span class="iconify" data-icon="mdi:calendar-check"></span> Afspraak Maken
+                    <span class="iconify" data-icon="mdi:calendar-check"></span> <span data-i18n="appointment">Make Appointment</span>
                 </a>
                 <div class="hamburger">
                     <span class="bar"></span>
@@ -47,50 +61,50 @@
         </div>
     </header>
 
-    <!-- Prijsoverzicht Hero Section -->
+    <!-- Price Overview Hero Section -->
     <section class="prijsoverzicht-hero">
         <div class="container">
-            <h1 class="prijsoverzicht-title">Prijsoverzicht</h1>
-            <p class="prijsoverzicht-subtitle">Transparante prijzen voor al onze diensten</p>
+            <h1 class="prijsoverzicht-title animate-on-scroll" data-i18n="priceOverview">Price Overview</h1>
+            <p class="prijsoverzicht-subtitle animate-on-scroll" data-i18n="transparentPrices">Transparent prices for all our services</p>
         </div>
     </section>
 
     <!-- Pricing Section -->
     <section class="pricing-section">
         <div class="container">
-            <div class="pricing-category">
-                <h2 class="category-title">Gelnagels</h2>
+            <div class="pricing-category animate-on-scroll">
+                <h2 class="category-title" data-i18n="gelNails">Gel Nails</h2>
                 <table class="price-table">
                     <thead>
                         <tr>
-                            <th>Behandeling</th>
-                            <th>Prijs</th>
-                            <th>Duur</th>
+                            <th data-i18n="treatment">Treatment</th>
+                            <th data-i18n="price">Price</th>
+                            <th data-i18n="duration">Duration</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Nieuwe set gelnagels naturel</td>
+                            <td data-i18n="newSetGelNailsNatural">New set of gel nails (natural)</td>
                             <td>€45</td>
                             <td>90 min</td>
                         </tr>
                         <tr>
-                            <td>Nieuwe set gelnagels met kleur</td>
+                            <td data-i18n="newSetGelNailsColor">New set of gel nails (with color)</td>
                             <td>€50</td>
                             <td>100 min</td>
                         </tr>
                         <tr>
-                            <td>Bijwerken gelnagels naturel</td>
+                            <td data-i18n="fillGelNailsNatural">Refill gel nails (natural)</td>
                             <td>€35</td>
                             <td>60 min</td>
                         </tr>
                         <tr>
-                            <td>Bijwerken gelnagels met kleur</td>
+                            <td data-i18n="fillGelNailsColor">Refill gel nails (with color)</td>
                             <td>€40</td>
                             <td>70 min</td>
                         </tr>
                         <tr>
-                            <td>Reparatie per nagel</td>
+                            <td data-i18n="repairPerNail">Repair per nail</td>
                             <td>€5</td>
                             <td>15 min</td>
                         </tr>
@@ -98,39 +112,39 @@
                 </table>
             </div>
 
-            <div class="pricing-category">
-                <h2 class="category-title">Acrylnagels</h2>
+            <div class="pricing-category animate-on-scroll">
+                <h2 class="category-title" data-i18n="acrylicNails">Acrylic Nails</h2>
                 <table class="price-table">
                     <thead>
                         <tr>
-                            <th>Behandeling</th>
-                            <th>Prijs</th>
-                            <th>Duur</th>
+                            <th data-i18n="treatment">Treatment</th>
+                            <th data-i18n="price">Price</th>
+                            <th data-i18n="duration">Duration</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Nieuwe set acrylnagels naturel</td>
+                            <td data-i18n="newSetAcrylicNailsNatural">New set of acrylic nails (natural)</td>
                             <td>€50</td>
                             <td>100 min</td>
                         </tr>
                         <tr>
-                            <td>Nieuwe set acrylnagels met kleur</td>
+                            <td data-i18n="newSetAcrylicNailsColor">New set of acrylic nails (with color)</td>
                             <td>€55</td>
                             <td>110 min</td>
                         </tr>
                         <tr>
-                            <td>Bijwerken acrylnagels naturel</td>
+                            <td data-i18n="fillAcrylicNailsNatural">Refill acrylic nails (natural)</td>
                             <td>€40</td>
                             <td>70 min</td>
                         </tr>
                         <tr>
-                            <td>Bijwerken acrylnagels met kleur</td>
+                            <td data-i18n="fillAcrylicNailsColor">Refill acrylic nails (with color)</td>
                             <td>€45</td>
                             <td>80 min</td>
                         </tr>
                         <tr>
-                            <td>Reparatie per nagel</td>
+                            <td data-i18n="repairPerNail">Repair per nail</td>
                             <td>€6</td>
                             <td>15 min</td>
                         </tr>
@@ -138,39 +152,39 @@
                 </table>
             </div>
 
-            <div class="pricing-category">
-                <h2 class="category-title">Manicure & Pedicure</h2>
+            <div class="pricing-category animate-on-scroll">
+                <h2 class="category-title" data-i18n="manicurePedicure">Manicure & Pedicure</h2>
                 <table class="price-table">
                     <thead>
                         <tr>
-                            <th>Behandeling</th>
-                            <th>Prijs</th>
-                            <th>Duur</th>
+                            <th data-i18n="treatment">Treatment</th>
+                            <th data-i18n="price">Price</th>
+                            <th data-i18n="duration">Duration</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Basis manicure</td>
+                            <td data-i18n="basicManicure">Basic manicure</td>
                             <td>€25</td>
                             <td>30 min</td>
                         </tr>
                         <tr>
-                            <td>Luxe manicure (incl. scrub en massage)</td>
+                            <td data-i18n="luxuryManicure">Luxury manicure (incl. scrub and massage)</td>
                             <td>€35</td>
                             <td>45 min</td>
                         </tr>
                         <tr>
-                            <td>Basis pedicure</td>
+                            <td data-i18n="basicPedicure">Basic pedicure</td>
                             <td>€30</td>
                             <td>40 min</td>
                         </tr>
                         <tr>
-                            <td>Luxe pedicure (incl. scrub en massage)</td>
+                            <td data-i18n="luxuryPedicure">Luxury pedicure (incl. scrub and massage)</td>
                             <td>€45</td>
                             <td>60 min</td>
                         </tr>
                         <tr>
-                            <td>Gellak op natuurlijke nagels</td>
+                            <td data-i18n="gelPolishNaturalNails">Gel polish on natural nails</td>
                             <td>€30</td>
                             <td>45 min</td>
                         </tr>
@@ -178,51 +192,51 @@
                 </table>
             </div>
 
-            <div class="pricing-category">
-                <h2 class="category-title">Nailart & Extra's</h2>
+            <div class="pricing-category animate-on-scroll">
+                <h2 class="category-title" data-i18n="nailArtExtras">Nail Art & Extras</h2>
                 <table class="price-table">
                     <thead>
                         <tr>
-                            <th>Behandeling</th>
-                            <th>Prijs</th>
+                            <th data-i18n="treatment">Treatment</th>
+                            <th data-i18n="price">Price</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Eenvoudige nailart (per nagel)</td>
+                            <td data-i18n="simpleNailArt">Simple nail art (per nail)</td>
                             <td>€2</td>
                         </tr>
                         <tr>
-                            <td>Complexe nailart (per nagel)</td>
+                            <td data-i18n="complexNailArt">Complex nail art (per nail)</td>
                             <td>€5</td>
                         </tr>
                         <tr>
-                            <td>Steentjes/glitters (per nagel)</td>
+                            <td data-i18n="stonesGlitters">Stones/glitters (per nail)</td>
                             <td>€1</td>
                         </tr>
                         <tr>
-                            <td>French manicure</td>
+                            <td data-i18n="frenchManicure">French manicure</td>
                             <td>€5</td>
                         </tr>
                         <tr>
-                            <td>Chrome/metallic effect</td>
+                            <td data-i18n="chromeEffect">Chrome/metallic effect</td>
                             <td>€10</td>
                         </tr>
                     </tbody>
                 </table>
-                <p class="price-note">* Prijzen voor nailart zijn exclusief de basisbehandeling.</p>
+                <p class="price-note" data-i18n="priceNoteNailArt">* Prices for nail art are exclusive of the basic treatment.</p>
             </div>
 
-            <div class="pricing-info">
-                <h3>Belangrijke informatie</h3>
+            <div class="pricing-info animate-on-scroll">
+                <h3 data-i18n="importantInfo">Important information</h3>
                 <ul>
-                    <li>Alle prijzen zijn inclusief BTW.</li>
-                    <li>Annuleringen dienen minimaal 24 uur van tevoren te worden doorgegeven.</li>
-                    <li>Bij te late annulering kan 50% van de behandelprijs in rekening worden gebracht.</li>
-                    <li>Prijzen kunnen onderhevig zijn aan wijzigingen.</li>
-                    <li>Specifieke wensen kunnen leiden tot een meerprijs.</li>
+                    <li data-i18n="priceIncludeVAT">All prices include VAT.</li>
+                    <li data-i18n="cancellationPolicy">Cancellations must be made at least 24 hours in advance.</li>
+                    <li data-i18n="lateCancellation">For late cancellations, 50% of the treatment price may be charged.</li>
+                    <li data-i18n="priceChanges">Prices are subject to change.</li>
+                    <li data-i18n="specificWishes">Specific wishes may lead to an additional charge.</li>
                 </ul>
-                <p>Voor vragen of het maken van een afspraak, neem gerust contact met ons op.</p>
+                <p data-i18n="questionsContact">For questions or to make an appointment, please feel free to contact us.</p>
             </div>
         </div>
     </section>
@@ -233,12 +247,12 @@
             <div class="footer-content">
                 <div class="footer-info">
                     <div class="footer-logo">
-                        <a href="index.html">LOGO</a>
+                        <a href="index.html">Bella Nails</a>
                     </div>
                     <div class="footer-contact">
                         <p><span class="iconify" data-icon="mdi:map-marker"></span> Hoofdstraat 123, 1234 AB Amsterdam</p>
                         <p><span class="iconify" data-icon="mdi:phone"></span> +31 6 12345678</p>
-                        <p><span class="iconify" data-icon="mdi:email"></span> info@nailsbeauty.nl</p>
+                        <p><span class="iconify" data-icon="mdi:email"></span> info@bellanails.nl</p>
                     </div>
                     <div class="footer-social">
                         <a href="#" aria-label="Facebook"><span class="iconify" data-icon="mdi:facebook"></span></a>
@@ -246,33 +260,33 @@
                     </div>
                 </div>
                 <div class="footer-hours">
-                    <h3>Openingstijden</h3>
-                    <p>Maandag: 9:00 - 18:00</p>
-                    <p>Dinsdag: 9:00 - 18:00</p>
-                    <p>Woensdag: 9:00 - 18:00</p>
-                    <p>Donderdag: 9:00 - 18:00</p>
-                    <p>Vrijdag: 9:00 - 18:00</p>
-                    <p>Zaterdag: 10:00 - 16:00</p>
-                    <p>Zondag: Gesloten</p>
+                    <h3 data-i18n="openingHoursTitle">Opening Hours</h3>
+                    <p><span data-i18n="monday">Monday</span>: 9:00 - 18:00</p>
+                    <p><span data-i18n="tuesday">Tuesday</span>: 9:00 - 18:00</p>
+                    <p><span data-i18n="wednesday">Wednesday</span>: 9:00 - 18:00</p>
+                    <p><span data-i18n="thursday">Thursday</span>: 9:00 - 18:00</p>
+                    <p><span data-i18n="friday">Friday</span>: 9:00 - 18:00</p>
+                    <p><span data-i18n="saturday">Saturday</span>: 10:00 - 16:00</p>
+                    <p><span data-i18n="sunday">Sunday</span>: <span data-i18n="closed">Closed</span></p>
                 </div>
                 <div class="footer-links">
-                    <h3>Snelle Links</h3>
+                    <h3 data-i18n="quickLinks">Quick Links</h3>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="nagels.html">Nagels</a></li>
-                        <li><a href="prijsoverzicht.html">Prijsoverzicht</a></li>
-                        <li><a href="over-ons.html">Over Ons</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="afspraak.html">Afspraak Maken</a></li>
+                        <li><a href="index.html" data-i18n="home">Home</a></li>
+                        <li><a href="nagels.html" data-i18n="nails">Nails</a></li>
+                        <li><a href="prijsoverzicht.html" data-i18n="prices">Prices</a></li>
+                        <li><a href="over-ons.html" data-i18n="about">About Us</a></li>
+                        <li><a href="contact.html" data-i18n="contact">Contact</a></li>
+                        <li><a href="afspraak.html" data-i18n="appointment">Make Appointment</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 LOGO. Alle rechten voorbehouden.</p>
+                <p>&copy; 2025 Bella Nails & Beauty. <span data-i18n="allRightsReserved">All rights reserved.</span></p>
             </div>
         </div>
     </footer>
 
-    <script src="./assets/js/main.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
 </body>
 </html>

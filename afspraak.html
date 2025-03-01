@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Afspraak Maken - LOGO</title>
+    <title>Make an Appointment - Bella Nails & Beauty</title>
+    <meta name="description" content="Easily book an appointment at Bella Nails & Beauty in Amsterdam for nail treatments and beauty care.">
     <link rel="stylesheet" href="./app.css">
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 </head>
@@ -13,10 +14,23 @@
         <div class="container">
             <div class="top-bar-contact">
                 <a href="tel:+31612345678"><span class="iconify" data-icon="mdi:phone"></span> +31 6 12345678</a>
-                <a href="mailto:info@nailsbeauty.nl"><span class="iconify" data-icon="mdi:email"></span> info@nailsbeauty.nl</a>
+                <a href="mailto:info@bellanails.nl"><span class="iconify" data-icon="mdi:email"></span> info@bellanails.nl</a>
             </div>
             <div class="top-bar-hours">
-                <span><span class="iconify" data-icon="mdi:clock-outline"></span> Ma-Vr: 9:00-18:00 | Za: 10:00-16:00</span>
+                <span><span class="iconify" data-icon="mdi:clock-outline"></span> <span data-i18n="openingHours">Mon-Fri: 9:00-18:00 | Sat: 10:00-16:00</span></span>
+                <div class="language-selector">
+                    <div class="language-btn">
+                        <span class="iconify" data-icon="mdi:translate"></span>
+                    </div>
+                    <div class="language-dropdown">
+                        <div class="language-option active" data-lang="en">
+                            <span class="iconify" data-icon="emojione:flag-for-united-kingdom"></span> English
+                        </div>
+                        <div class="language-option" data-lang="es">
+                            <span class="iconify" data-icon="emojione:flag-for-spain"></span> Español
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -26,17 +40,17 @@
         <div class="container">
             <nav class="main-nav">
                 <div class="logo">
-                    <a href="index.html">LOGO</a>
+                    <a href="index.html">Bella Nails</a>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="nagels.html">Nagels</a></li>
-                    <li><a href="prijsoverzicht.html">Prijsoverzicht</a></li>
-                    <li><a href="over-ons.html">Over Ons</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html" data-i18n="home">Home</a></li>
+                    <li><a href="nagels.html" data-i18n="nails">Nails</a></li>
+                    <li><a href="prijsoverzicht.html" data-i18n="prices">Prices</a></li>
+                    <li><a href="over-ons.html" data-i18n="about">About Us</a></li>
+                    <li><a href="contact.html" data-i18n="contact">Contact</a></li>
                 </ul>
                 <a href="afspraak.html" class="appointment-btn">
-                    <span class="iconify" data-icon="mdi:calendar-check"></span> Afspraak Maken
+                    <span class="iconify" data-icon="mdi:calendar-check"></span> <span data-i18n="appointment">Make Appointment</span>
                 </a>
                 <div class="hamburger">
                     <span class="bar"></span>
@@ -47,11 +61,11 @@
         </div>
     </header>
 
-    <!-- Afspraak Hero Section -->
+    <!-- Appointment Hero Section -->
     <section class="afspraak-hero">
         <div class="container">
-            <h1 class="afspraak-title">Book Appointment</h1>
-            <p class="afspraak-subtitle">Schedule your treatment</p>
+            <h1 class="afspraak-title animate-on-scroll" data-i18n="makeAppointment">Make an Appointment</h1>
+            <p class="afspraak-subtitle animate-on-scroll" data-i18n="planYourTreatment">Plan your treatment</p>
         </div>
     </section>
 
@@ -59,98 +73,99 @@
     <section class="booking-section">
         <div class="container">
             <div class="booking-container">
-                <div class="booking-info">
-                    <h3>Hoe werkt het?</h3>
+                <div class="booking-info animate-on-scroll">
+                    <h3 data-i18n="howItWorks">How does it work?</h3>
                     <div class="booking-steps">
                         <div class="booking-step">
                             <div class="step-number">1</div>
                             <div class="step-text">
-                                <h4>Kies uw behandeling</h4>
-                                <p>Selecteer de gewenste behandeling uit ons aanbod.</p>
+                                <h4 data-i18n="chooseTreatment">Choose your treatment</h4>
+                                <p data-i18n="chooseTreatmentDesc">Select the desired treatment from our offerings.</p>
                             </div>
                         </div>
                         <div class="booking-step">
                             <div class="step-number">2</div>
                             <div class="step-text">
-                                <h4>Vul uw gegevens in</h4>
-                                <p>Vul het formulier in met uw contactgegevens.</p>
+                                <h4 data-i18n="fillDetails">Fill in your details</h4>
+                                <p data-i18n="fillDetailsDesc">Complete the form with your contact information.</p>
                             </div>
                         </div>
                         <div class="booking-step">
                             <div class="step-number">3</div>
                             <div class="step-text">
-                                <h4>Verstuur uw aanvraag</h4>
-                                <p>Wij nemen contact met u op om de afspraak te bevestigen.</p>
+                                <h4 data-i18n="submitRequest">Submit your request</h4>
+                                <p data-i18n="submitRequestDesc">We will contact you to confirm the appointment.</p>
                             </div>
                         </div>
                     </div>
-                    <p>U kunt ook direct contact met ons opnemen via WhatsApp of telefoon voor het maken van een afspraak.</p>
+                    <p data-i18n="contactWhatsApp">You can also contact us directly via WhatsApp or phone to make an appointment.</p>
                 </div>
-                <div class="booking-form">
-                    <h3>Appointment Form</h3>
+                <div class="booking-form animate-on-scroll">
+                    <h3 data-i18n="appointmentForm">Appointment Form</h3>
                     <form id="appointmentForm">
                         <div class="form-group">
-                            <label for="name">Name</label>
+                            <label for="name" data-i18n="name">Name</label>
                             <input type="text" id="name" name="name" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
+                            <label for="email" data-i18n="email">Email</label>
                             <input type="email" id="email" name="email" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label for="phone">Phone</label>
+                            <label for="phone" data-i18n="phone">Phone</label>
                             <input type="tel" id="phone" name="phone" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label for="date">Preferred Date</label>
+                            <label for="date" data-i18n="desiredDate">Desired Date</label>
                             <input type="date" id="date" name="date" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label for="time">Preferred Time</label>
+                            <label for="time" data-i18n="desiredTime">Desired Time</label>
                             <input type="time" id="time" name="time" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label>Preferred Treatment</label>
+                            <label data-i18n="desiredTreatment">Desired Treatment</label>
                             <div class="service-options">
                                 <div class="service-option">
                                     <input type="radio" id="service1" name="service" value="gelnails" required>
-                                    <label for="service1">Gel Nails</label>
+                                    <label for="service1" data-i18n="gelNails">Gel Nails</label>
                                 </div>
                                 <div class="service-option">
-                                    <input type="radio" id="service2" name="service" value="acrylnails">
-                                    <label for="service2">Acrylic Nails</label>
+                                    <input type="radio" id="service2" name="service" value="acrylicnails">
+                                    <label for="service2" data-i18n="acrylicNails">Acrylic Nails</label>
                                 </div>
                                 <div class="service-option">
                                     <input type="radio" id="service3" name="service" value="manicure">
-                                    <label for="service3">Manicure</label>
+                                    <label for="service3" data-i18n="manicure">Manicure</label>
                                 </div>
                                 <div class="service-option">
                                     <input type="radio" id="service4" name="service" value="pedicure">
-                                    <label for="service4">Pedicure</label>
+                                    <label for="service4" data-i18n="pedicure">Pedicure</label>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="message">Comments</label>
+                            <label for="message" data-i18n="comments">Comments</label>
                             <textarea id="message" name="message" class="form-control"></textarea>
                         </div>
-                        <button type="submit" class="btn">Submit Appointment</button>
+                        <button type="submit" class="btn" data-i18n="requestAppointment">Request Appointment</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- WhatsApp Section -->
     <section class="whatsapp-section">
         <div class="container">
-            <h2 class="whatsapp-title">Directly Book via WhatsApp?</h2>
-            <p class="whatsapp-description">
+            <h2 class="whatsapp-title animate-on-scroll" data-i18n="bookViaWhatsApp">Book Directly via WhatsApp?</h2>
+            <p class="whatsapp-description animate-on-scroll" data-i18n="whatsappDescription">
                 Send us a message with your desired treatment, date, and time. 
-                We'll respond promptly to confirm your appointment.
+                We will respond quickly to confirm your appointment.
             </p>
-            <a href="https://wa.me/31612345678" class="whatsapp-btn" target="_blank">
+            <a href="https://wa.me/31612345678" class="whatsapp-btn animate-on-scroll" target="_blank">
                 <span class="whatsapp-icon"><span class="iconify" data-icon="mdi:whatsapp"></span></span>
-                WhatsApp Appointment
+                <span data-i18n="whatsappAppointment">WhatsApp Appointment</span>
             </a>
         </div>
     </section>
@@ -161,12 +176,12 @@
             <div class="footer-content">
                 <div class="footer-info">
                     <div class="footer-logo">
-                        <a href="index.html">LOGO</a>
+                        <a href="index.html">Bella Nails</a>
                     </div>
                     <div class="footer-contact">
                         <p><span class="iconify" data-icon="mdi:map-marker"></span> Hoofdstraat 123, 1234 AB Amsterdam</p>
                         <p><span class="iconify" data-icon="mdi:phone"></span> +31 6 12345678</p>
-                        <p><span class="iconify" data-icon="mdi:email"></span> info@nailsbeauty.nl</p>
+                        <p><span class="iconify" data-icon="mdi:email"></span> info@bellanails.nl</p>
                     </div>
                     <div class="footer-social">
                         <a href="#" aria-label="Facebook"><span class="iconify" data-icon="mdi:facebook"></span></a>
@@ -174,33 +189,33 @@
                     </div>
                 </div>
                 <div class="footer-hours">
-                    <h3>Openingstijden</h3>
-                    <p>Maandag: 9:00 - 18:00</p>
-                    <p>Dinsdag: 9:00 - 18:00</p>
-                    <p>Woensdag: 9:00 - 18:00</p>
-                    <p>Donderdag: 9:00 - 18:00</p>
-                    <p>Vrijdag: 9:00 - 18:00</p>
-                    <p>Zaterdag: 10:00 - 16:00</p>
-                    <p>Zondag: Gesloten</p>
+                    <h3 data-i18n="openingHoursTitle">Opening Hours</h3>
+                    <p><span data-i18n="monday">Monday</span>: 9:00 - 18:00</p>
+                    <p><span data-i18n="tuesday">Tuesday</span>: 9:00 - 18:00</p>
+                    <p><span data-i18n="wednesday">Wednesday</span>: 9:00 - 18:00</p>
+                    <p><span data-i18n="thursday">Thursday</span>: 9:00 - 18:00</p>
+                    <p><span data-i18n="friday">Friday</span>: 9:00 - 18:00</p>
+                    <p><span data-i18n="saturday">Saturday</span>: 10:00 - 16:00</p>
+                    <p><span data-i18n="sunday">Sunday</span>: <span data-i18n="closed">Closed</span></p>
                 </div>
                 <div class="footer-links">
-                    <h3>Snelle Links</h3>
+                    <h3 data-i18n="quickLinks">Quick Links</h3>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="nagels.html">Nagels</a></li>
-                        <li><a href="prijsoverzicht.html">Prijsoverzicht</a></li>
-                        <li><a href="over-ons.html">Over Ons</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="afspraak.html">Afspraak Maken</a></li>
+                        <li><a href="index.html" data-i18n="home">Home</a></li>
+                        <li><a href="nagels.html" data-i18n="nails">Nails</a></li>
+                        <li><a href="prijsoverzicht.html" data-i18n="prices">Prices</a></li>
+                        <li><a href="over-ons.html" data-i18n="about">About Us</a></li>
+                        <li><a href="contact.html" data-i18n="contact">Contact</a></li>
+                        <li><a href="afspraak.html" data-i18n="appointment">Make Appointment</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 LOGO. Alle rechten voorbehouden.</p>
+                <p>&copy; 2025 Bella Nails & Beauty. <span data-i18n="allRightsReserved">All rights reserved.</span></p>
             </div>
         </div>
     </footer>
 
-    <script src="./assets/js/main.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
 </body>
 </html>

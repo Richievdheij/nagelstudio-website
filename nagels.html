@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nagels - LOGO</title>
+    <title>Nails - Bella Nails & Beauty</title>
+    <meta name="description" content="Discover our professional nail treatments at Bella Nails & Beauty. Gel nails, acrylic nails, manicure and more.">
     <link rel="stylesheet" href="./app.css">
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 </head>
@@ -13,10 +14,23 @@
         <div class="container">
             <div class="top-bar-contact">
                 <a href="tel:+31612345678"><span class="iconify" data-icon="mdi:phone"></span> +31 6 12345678</a>
-                <a href="mailto:info@nailsbeauty.nl"><span class="iconify" data-icon="mdi:email"></span> info@nailsbeauty.nl</a>
+                <a href="mailto:info@bellanails.nl"><span class="iconify" data-icon="mdi:email"></span> info@bellanails.nl</a>
             </div>
             <div class="top-bar-hours">
-                <span><span class="iconify" data-icon="mdi:clock-outline"></span> Ma-Vr: 9:00-18:00 | Za: 10:00-16:00</span>
+                <span><span class="iconify" data-icon="mdi:clock-outline"></span> <span data-i18n="openingHours">Mon-Fri: 9:00-18:00 | Sat: 10:00-16:00</span></span>
+                <div class="language-selector">
+                    <div class="language-btn">
+                        <span class="iconify" data-icon="mdi:translate"></span>
+                    </div>
+                    <div class="language-dropdown">
+                        <div class="language-option active" data-lang="en">
+                            <span class="iconify" data-icon="emojione:flag-for-united-kingdom"></span> English
+                        </div>
+                        <div class="language-option" data-lang="es">
+                            <span class="iconify" data-icon="emojione:flag-for-spain"></span> Español
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -26,17 +40,17 @@
         <div class="container">
             <nav class="main-nav">
                 <div class="logo">
-                    <a href="index.html">LOGO</a>
+                    <a href="index.html">Bella Nails</a>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="nagels.html">Nagels</a></li>
-                    <li><a href="prijsoverzicht.html">Prijsoverzicht</a></li>
-                    <li><a href="over-ons.html">Over Ons</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html" data-i18n="home">Home</a></li>
+                    <li><a href="nagels.html" data-i18n="nails">Nails</a></li>
+                    <li><a href="prijsoverzicht.html" data-i18n="prices">Prices</a></li>
+                    <li><a href="over-ons.html" data-i18n="about">About Us</a></li>
+                    <li><a href="contact.html" data-i18n="contact">Contact</a></li>
                 </ul>
                 <a href="afspraak.html" class="appointment-btn">
-                    <span class="iconify" data-icon="mdi:calendar-check"></span> Afspraak Maken
+                    <span class="iconify" data-icon="mdi:calendar-check"></span> <span data-i18n="appointment">Make Appointment</span>
                 </a>
                 <div class="hamburger">
                     <span class="bar"></span>
@@ -50,74 +64,62 @@
     <!-- Nagels Hero Section -->
     <section class="nagels-hero">
         <div class="container">
-            <h1 class="nagels-title">Onze Nagelbehandelingen</h1>
-            <p class="nagels-subtitle">Perfectie tot in de details</p>
+            <h1 class="nagels-title animate-on-scroll" data-i18n="ourNailTreatments">Our Nail Treatments</h1>
+            <p class="nagels-subtitle animate-on-scroll" data-i18n="perfectionInDetails">Perfection in details</p>
         </div>
     </section>
 
     <!-- Services Section -->
     <section class="services-section">
         <div class="container">
-            <h2 class="section-title">Onze <span class="fancy-title">Diensten</span></h2>
+            <h2 class="section-title animate-on-scroll">Our <span class="fancy-title" data-i18n="ourServices">Services</span></h2>
             <div class="services-grid">
-                <div class="service-card">
+                <div class="service-card animate-on-scroll">
                     <div class="service-image">
-                        <!-- Placeholder for image -->
-                        <div style="background-color: #ddd; height: 100%; display: flex; align-items: center; justify-content: center;">
-                            <span class="iconify" data-icon="mdi:image" style="font-size: 5rem; color: #999;"></span>
-                        </div>
+                        <img data-src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Gel nails" class="lazy-image">
                     </div>
                     <div class="service-content">
-                        <h3 class="service-title">Gelnagels</h3>
+                        <h3 class="service-title" data-i18n="gelNails">Gel Nails</h3>
                         <p class="service-description">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.
                         </p>
-                        <a href="prijsoverzicht.html" class="btn">Bekijk Prijzen</a>
+                        <a href="prijsoverzicht.html" class="btn" data-i18n="viewPrices">View Prices</a>
                     </div>
                 </div>
-                <div class="service-card">
+                <div class="service-card animate-on-scroll">
                     <div class="service-image">
-                        <!-- Placeholder for image -->
-                        <div style="background-color: #ddd; height: 100%; display: flex; align-items: center; justify-content: center;">
-                            <span class="iconify" data-icon="mdi:image" style="font-size: 5rem; color: #999;"></span>
-                        </div>
+                        <img data-src="https://images.unsplash.com/photo-1604902396830-aca29e19b067?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Acrylic nails" class="lazy-image">
                     </div>
                     <div class="service-content">
-                        <h3 class="service-title">Acrylnagels</h3>
+                        <h3 class="service-title" data-i18n="acrylicNails">Acrylic Nails</h3>
                         <p class="service-description">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.
                         </p>
-                        <a href="prijsoverzicht.html" class="btn">Bekijk Prijzen</a>
+                        <a href="prijsoverzicht.html" class="btn" data-i18n="viewPrices">View Prices</a>
                     </div>
                 </div>
-                <div class="service-card">
+                <div class="service-card animate-on-scroll">
                     <div class="service-image">
-                        <!-- Placeholder for image -->
-                        <div style="background-color: #ddd; height: 100%; display: flex; align-items: center; justify-content: center;">
-                            <span class="iconify" data-icon="mdi:image" style="font-size: 5rem; color: #999;"></span>
-                        </div>
+                        <img data-src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Manicure" class="lazy-image">
                     </div>
                     <div class="service-content">
-                        <h3 class="service-title">Manicure</h3>
+                        <h3 class="service-title" data-i18n="manicure">Manicure</h3>
                         <p class="service-description">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.
                         </p>
-                        <a href="prijsoverzicht.html" class="btn">Bekijk Prijzen</a>
+                        <a href="prijsoverzicht.html" class="btn" data-i18n="viewPrices">View Prices</a>
                     </div>
                 </div>
-                <div class="service-card">
+                <div class="service-card animate-on-scroll">
                     <div class="service-image">
-                        <!-- Placeholder for image -->
-                        <div style="background-color: #ddd; height: 100%; display: flex; align-items: center; justify-content: center;">
-                            <span class="iconify" data-icon="mdi:image" style="font-size: 5rem; color: #999;"></span>
-                        </div>
+                        <img data-src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Nail art" class="lazy-image">
                     </div>
                     <div class="service-content">
-                        <h3 class="service-title">Nailart</h3>
+                        <h3 class="service-title" data-i18n="nailArt">Nail Art</h3>
                         <p class="service-description">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.
                         </p>
-                        <a href="prijsoverzicht.html" class="btn">Bekijk Prijzen</a>
+                        <a href="prijsoverzicht.html" class="btn" data-i18n="viewPrices">View Prices</a>
                     </div>
                 </div>
             </div>
@@ -127,38 +129,26 @@
     <!-- Gallery Section -->
     <section class="gallery-section">
         <div class="container">
-            <h2 class="section-title gallery-title">Onze <span class="fancy-title">Galerij</span></h2>
+            <h2 class="section-title gallery-title animate-on-scroll">Our <span class="fancy-title" data-i18n="ourGallery">Gallery</span></h2>
             <div class="gallery-grid">
-                <!-- Gallery items with placeholders for images -->
-                <div class="gallery-item">
-                    <div style="background-color: #ddd; height: 100%; display: flex; align-items: center; justify-content: center;">
-                        <span class="iconify" data-icon="mdi:image" style="font-size: 3rem; color: #999;"></span>
-                    </div>
+                <!-- Gallery items with images -->
+                <div class="gallery-item animate-on-scroll">
+                    <img data-src="https://images.unsplash.com/photo-1604902396830-aca29e19b067?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Nail design 1" class="lazy-image">
                 </div>
-                <div class="gallery-item">
-                    <div style="background-color: #ddd; height: 100%; display: flex; align-items: center; justify-content: center;">
-                        <span class="iconify" data-icon="mdi:image" style="font-size: 3rem; color: #999;"></span>
-                    </div>
+                <div class="gallery-item animate-on-scroll">
+                    <img data-src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Nail design 2" class="lazy-image">
                 </div>
-                <div class="gallery-item">
-                    <div style="background-color: #ddd; height: 100%; display: flex; align-items: center; justify-content: center;">
-                        <span class="iconify" data-icon="mdi:image" style="font-size: 3rem; color: #999;"></span>
-                    </div>
+                <div class="gallery-item animate-on-scroll">
+                    <img data-src="https://images.unsplash.com/photo-1604654894610-df63bc536371?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Nail design 3" class="lazy-image">
                 </div>
-                <div class="gallery-item">
-                    <div style="background-color: #ddd; height: 100%; display: flex; align-items: center; justify-content: center;">
-                        <span class="iconify" data-icon="mdi:image" style="font-size: 3rem; color: #999;"></span>
-                    </div>
+                <div class="gallery-item animate-on-scroll">
+                    <img data-src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Nail design 4" class="lazy-image">
                 </div>
-                <div class="gallery-item">
-                    <div style="background-color: #ddd; height: 100%; display: flex; align-items: center; justify-content: center;">
-                        <span class="iconify" data-icon="mdi:image" style="font-size: 3rem; color: #999;"></span>
-                    </div>
+                <div class="gallery-item animate-on-scroll">
+                    <img data-src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Nail design 5" class="lazy-image">
                 </div>
-                <div class="gallery-item">
-                    <div style="background-color: #ddd; height: 100%; display: flex; align-items: center; justify-content: center;">
-                        <span class="iconify" data-icon="mdi:image" style="font-size: 3rem; color: #999;"></span>
-                    </div>
+                <div class="gallery-item animate-on-scroll">
+                    <img data-src="https://images.unsplash.com/photo-1604902396830-aca29e19b067?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Nail design 6" class="lazy-image">
                 </div>
             </div>
         </div>
@@ -170,12 +160,12 @@
             <div class="footer-content">
                 <div class="footer-info">
                     <div class="footer-logo">
-                        <a href="index.html">LOGO</a>
+                        <a href="index.html">Bella Nails</a>
                     </div>
                     <div class="footer-contact">
                         <p><span class="iconify" data-icon="mdi:map-marker"></span> Hoofdstraat 123, 1234 AB Amsterdam</p>
                         <p><span class="iconify" data-icon="mdi:phone"></span> +31 6 12345678</p>
-                        <p><span class="iconify" data-icon="mdi:email"></span> info@nailsbeauty.nl</p>
+                        <p><span class="iconify" data-icon="mdi:email"></span> info@bellanails.nl</p>
                     </div>
                     <div class="footer-social">
                         <a href="#" aria-label="Facebook"><span class="iconify" data-icon="mdi:facebook"></span></a>
@@ -183,33 +173,33 @@
                     </div>
                 </div>
                 <div class="footer-hours">
-                    <h3>Openingstijden</h3>
-                    <p>Maandag: 9:00 - 18:00</p>
-                    <p>Dinsdag: 9:00 - 18:00</p>
-                    <p>Woensdag: 9:00 - 18:00</p>
-                    <p>Donderdag: 9:00 - 18:00</p>
-                    <p>Vrijdag: 9:00 - 18:00</p>
-                    <p>Zaterdag: 10:00 - 16:00</p>
-                    <p>Zondag: Gesloten</p>
+                    <h3 data-i18n="openingHoursTitle">Opening Hours</h3>
+                    <p><span data-i18n="monday">Monday</span>: 9:00 - 18:00</p>
+                    <p><span data-i18n="tuesday">Tuesday</span>: 9:00 - 18:00</p>
+                    <p><span data-i18n="wednesday">Wednesday</span>: 9:00 - 18:00</p>
+                    <p><span data-i18n="thursday">Thursday</span>: 9:00 - 18:00</p>
+                    <p><span data-i18n="friday">Friday</span>: 9:00 - 18:00</p>
+                    <p><span data-i18n="saturday">Saturday</span>: 10:00 - 16:00</p>
+                    <p><span data-i18n="sunday">Sunday</span>: <span data-i18n="closed">Closed</span></p>
                 </div>
                 <div class="footer-links">
-                    <h3>Snelle Links</h3>
+                    <h3 data-i18n="quickLinks">Quick Links</h3>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="nagels.html">Nagels</a></li>
-                        <li><a href="prijsoverzicht.html">Prijsoverzicht</a></li>
-                        <li><a href="over-ons.html">Over Ons</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="afspraak.html">Afspraak Maken</a></li>
+                        <li><a href="index.html" data-i18n="home">Home</a></li>
+                        <li><a href="nagels.html" data-i18n="nails">Nails</a></li>
+                        <li><a href="prijsoverzicht.html" data-i18n="prices">Prices</a></li>
+                        <li><a href="over-ons.html" data-i18n="about">About Us</a></li>
+                        <li><a href="contact.html" data-i18n="contact">Contact</a></li>
+                        <li><a href="afspraak.html" data-i18n="appointment">Make Appointment</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 LOGO. Alle rechten voorbehouden.</p>
+                <p>&copy; 2025 Bella Nails & Beauty. <span data-i18n="allRightsReserved">All rights reserved.</span></p>
             </div>
         </div>
     </footer>
 
-    <script src="./assets/js/main.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
 </body>
 </html>

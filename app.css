@@ -1,5 +1,8 @@
 /* General Styles */
-@import url('./assets/css/styles.css'); /* Standaard styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap');
+
+/* Standaard styles */
+@import url('./assets/css/styles.css');
 
 /* Page Specific Styles */
 @import url('./assets/css/pages/afspraak.css');
@@ -8,3 +11,30 @@
 @import url('./assets/css/pages/nagels.css');
 @import url('./assets/css/pages/over-ons.css');
 @import url('./assets/css/pages/prijsoverzicht.css');
+
+/* Animation Classes */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-on-scroll.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Image loading animation */
+img.loaded {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Scrolled header style */
+.main-header.scrolled {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
